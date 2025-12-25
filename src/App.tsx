@@ -16,7 +16,7 @@ function App() {
 
     try {
       // Gọi đến API Gemini (Vercel sẽ tự hiểu nếu bạn đã cài Environment Variable)
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSy...Your_Key`, {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyDpbU5GHXRXPVMuqrVwDQStnmNADWXqGFU`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contents: [{ parts: [{ text: input }] }] })
